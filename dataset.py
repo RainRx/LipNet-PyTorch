@@ -100,8 +100,8 @@ class MyDataset(Dataset):
         pre = -1
         txt = []
         for n in arr:
-            if(pre != n and n >= start):                
-                if(len(txt) > 0 and txt[-1] == ' ' and MyDataset.letters[n - start] == ' '):
+            if pre != n and n >= start:
+                if len(txt) > 0 and txt[-1] == ' ' and MyDataset.letters[n - start] == ' ':
                     pass
                 else:
                     txt.append(MyDataset.letters[n - start])                

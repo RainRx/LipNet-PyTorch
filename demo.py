@@ -161,6 +161,3 @@ if(__name__ == '__main__'):
     output_video(img_p, txt, sys.argv[2])
     
     shutil.rmtree(img_p)
-    
-    
-    
